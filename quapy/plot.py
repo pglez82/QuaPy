@@ -310,8 +310,9 @@ def error_by_drift(method_names, true_prevs, estim_prevs, tr_prevs,
         ax2.bar([ind * binwidth-binwidth/2 for ind in range(len(bins))],
                densities, alpha=0.15, color='g', width=binwidth, label='density')
         ax2.set_ylim(0,max(densities))
-        ax2.spines['right'].set_color('g')
-        ax2.tick_params(axis='y', colors='g')
+        ax2.set_yticklabels([])
+        #ax2.spines['right'].set_color('g')
+        #ax2.tick_params(axis='y', colors='g')
     
     ax.set(xlabel=f'Distribution shift between training set and test sample',
            ylabel=f'{error_name.upper()} (true distribution, predicted distribution)',
