@@ -311,6 +311,7 @@ def error_by_drift(method_names, true_prevs, estim_prevs, tr_prevs,
                densities, alpha=0.15, color='g', width=binwidth, label='density')
         ax2.set_ylim(0,max(densities))
         ax2.set_yticklabels([])
+        ax2.set_yticks([])
         #ax2.spines['right'].set_color('g')
         #ax2.tick_params(axis='y', colors='g')
     
